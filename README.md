@@ -129,7 +129,20 @@ A técnica de intercalação ótima é usada para unir listas ordenadas em uma �
 
 ### 🌳 Árvore B
 
-A árvore B é uma estrutura de dados eficiente para armazenar e organizar grandes conjuntos de dados de forma balanceada. É útil para operações de busca e inserção
+A árvore B é uma estrutura de dados eficiente para armazenar e organizar grandes conjuntos de dados de forma balanceada. É útil para operações de busca e inserção.
+
+O método oferece as seguintes funcionalidades:
+
+- Inserção de jogadores na Árvore B.
+- Remoção de jogadores da Árvore B.
+- Busca e impressão de jogadores por ID.
+- Impressão da Árvore B.
+
+**Funções:**
+- `cria` - Cria o nó da árvore
+- `insere_folha` - Insere nó folha na árvore
+- `busca` - Busca nó na árvore
+- `remove_arvore` - Exclui nó da árvore
 
 ## 📫 Autores
 - Emanuelle Ferraz Lima
