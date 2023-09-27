@@ -144,6 +144,26 @@ O método oferece as seguintes funcionalidades:
 - `busca` - Busca nó na árvore
 - `remove_arvore` - Exclui nó da árvore
 
+- Criação da árvore:
+```c
+TNo *cria_arvore_com_ids(FILE *out, int D) {
+    TPlayer *jogador;
+    TNo *raiz = cria(D);  // Cria a raiz da árvore uma vez
+
+    fseek(out, 0, SEEK_SET);  // Volta ao início do arquivo
+
+    while ((jogador = le(out)) != NULL) {
+        printf("\n\n****** Inserindo %d ******\n\n", jogador->id);
+        raiz = insere_folha(raiz, D, jogador->id);
+        imprime_arvore(raiz, 0);  // Imprime a árvore completa após inserções
+        free(jogador);
+    }
+
+
+    return raiz;
+}
+``` 
+
 ## 📫 Autores
 - Emanuelle Ferraz Lima
 - Mateus Henrique Santos
